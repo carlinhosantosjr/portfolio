@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans", sans-serif;
+  
+  --background-darker: #0b0b0f;
+  --background-maincard: #181818ED;
+  --background-badge: #111111;
+
+  
+  --fontcolor-white: #fafafa;
+  --fontcolor-lightgray: #c4c4c4;
+
+}

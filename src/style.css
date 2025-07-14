@@ -3,12 +3,20 @@
 @theme {
   --font-sans: "Noto Sans", sans-serif;
   
-  --background-darker: #0b0b0f;
-  --background-maincard: #181818ED;
-  --background-badge: #111111;
+  --background-darker: #000000;
+  --gray-600: #070707;
+  --gray-500: #0d0d0d;
+  --gray-400: #111111;
+  --gray-300: #181818;
 
   
   --fontcolor-white: #fafafa;
   --fontcolor-lightgray: #c4c4c4;
+  --fontcolor-mediumgray: #969696;
+}
 
+@layer utilities {
+  .swiper-marquee .swiper-wrapper {
+    transition-timing-function: linear;
+  }
 }

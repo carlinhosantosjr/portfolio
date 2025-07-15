@@ -12,6 +12,11 @@ import coffeeIcon from '../../assets/coffeeIcon.png'
 import whatsIcon from '../../assets/whatsIcon.png'
 import outlookIcon from '../../assets/outlookIcon.png'
 import linkedinIcon from '../../assets/linkedinIcon.png'
+import reactCertificate from '../../assets/reactCertificate.png'
+import portfolioIcon from '../../assets/portfolioIcon.png'
+import weekAiRocket from '../../assets/weekAiRocket.png'
+import nlwAgents from '../../assets/nlwAgents.png'
+import certificateIcon from '../../assets/certificateIcon.png'
 import { SwiperIcons } from '../ui/Swiper'
 
 export function SidePanel() {
@@ -29,6 +34,14 @@ export function SidePanel() {
     { title: 'Pizza Shop', src: pizzaIcon },
     { title: 'Tshirt Shop', src: tshirtShop },
     { title: 'Coffee Shop', src: coffeeIcon },
+    { title: 'Projeto Portfólio', src: portfolioIcon },
+  ]
+
+  const achievements = [
+    { title: 'Certificação ReactJs', src: reactCertificate },
+    { title: 'Semana IA', src: weekAiRocket },
+    { title: 'NLW Agents 2025', src: nlwAgents },
+    { title: 'Comunicação Assertiva', src: certificateIcon },
   ]
 
   const contacts = [
@@ -41,22 +54,17 @@ export function SidePanel() {
     <div className="bg-[var(--gray-500)] w-[268px] h-[428px] text-sm text-[var(--fontcolor-white)] p-2 pt-2.5 mr-5">
       <div className="p-2">
         <span>Stacks e habilidades</span>
-        <SwiperIcons icons={stackIcons} />
+        <SwiperIcons icons={stackIcons} quantityDisplayIcon={5} />
       </div>
 
       <div className="pt-5 pl-2">
         <span>Projetos</span>
-        <div className="flex">
-          {projects.map((project, index) => (
-            <img
-              className=" mt-2.5 h-12 mr-5 rounded-bl-xl transition-all duration-200 hover:cursor-pointer hover:shadow-sm hover:scale-[1.15]"
-              title={project.title}
-              src={project.src}
-              alt={project.title}
-              key={index}
-            />
-          ))}
-        </div>
+        <SwiperIcons icons={projects} quantityDisplayIcon={4} iconSize="12" />
+      </div>
+
+      <div className="pt-5 pl-2">
+        <span>Conquistas</span>
+        <SwiperIcons icons={achievements} quantityDisplayIcon={4} iconSize="10" />
       </div>
 
       <div className="mt-5 pl-2 ">
@@ -69,6 +77,12 @@ export function SidePanel() {
               src={contact.src}
               alt={contact.title}
               key={index}
+              onClick={() => {
+                const target = document.getElementById('contactSession')
+                if (target) {
+                  target.scrollIntoView({ behavior: 'smooth' })
+                }
+              }}
             />
           ))}
         </div>

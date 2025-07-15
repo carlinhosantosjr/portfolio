@@ -9,9 +9,11 @@ interface Icon {
 
 interface SwiperIconsProps {
   icons: Icon[]
+  quantityDisplayIcon: number
+  iconSize?: string
 }
 
-export function SwiperIcons({ icons }: SwiperIconsProps) {
+export function SwiperIcons({ icons, quantityDisplayIcon, iconSize }: SwiperIconsProps) {
   return (
     <Swiper
       modules={[Autoplay]}
@@ -23,13 +25,13 @@ export function SwiperIcons({ icons }: SwiperIconsProps) {
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
       }}
-      slidesPerView={5}
+      slidesPerView={quantityDisplayIcon}
       speed={2000}
     >
       {icons.map((icon, index) => (
         <SwiperSlide key={index} className="pt-2.5">
           <img
-            className="pl-1 pr-1 rounded-bl-lg transition-all duration-200 hover:cursor-pointer hover:shadow-sm hover:scale-[1.15]"
+            className={`pl-1 pr-1 h-${iconSize} w-${iconSize} rounded-bl-lg transition-all duration-200 hover:cursor-pointer hover:shadow-sm hover:scale-[1.15]`}
             title={icon.title}
             src={icon.src}
             alt={icon.title}

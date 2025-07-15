@@ -11,7 +11,7 @@ export function App() {
       className="bg-[url('/caminho/da/imagem.jpg')] bg-cover bg-right  min-h-screen"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="bg-[var(--gray-300)] pt-6 max-w-[976px] m-auto opacity-98">
+      <div className="bg-[var(--gray-300)] pt-6 max-w-[976px] m-auto opacity-98 cursor-default">
         <Header />
         <div className="flex justify-between">
           <div className="pl-2.5">

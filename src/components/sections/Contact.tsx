@@ -4,7 +4,7 @@ import outlookIcon from '../../assets/outlookIcon.png'
 
 export function Contact() {
   return (
-    <div className="flex flex-col w-[652px] bg-[var(--gray-400)] gap-3 mt-10">
+    <div id="contactSession" className="flex flex-col w-[652px] bg-[var(--gray-400)] gap-3 mt-10">
       <div className="bg-[var(--gray-600)] h-10 content-center">
         <h3 className="text-[var(--fontcolor-white)] text-[1rem] pl-2.5">Contato</h3>
       </div>

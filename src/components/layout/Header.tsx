@@ -1,6 +1,6 @@
-import avatar from '../assets/avatar.png'
-import flag from '../assets/flag.png'
-import react from '../assets/react-icon.png'
+import avatar from '../../assets/avatar.png'
+import flag from '../../assets/flag.png'
+import react from '../../assets/react-icon.png'
 
 export function Header() {
   return (
@@ -43,7 +43,7 @@ export function Header() {
           <img src={react} alt="react-icon" className="h-[54px] w-[54px] rounded-xl shadow-black shadow-m" />
           <div className="flex flex-col">
             <span className="text-sm">React</span>
-            <span className="text-xs text-[var(--fontcolor-lightgray)]">Avançado</span>
+            <span className="text-xs text-[var(--fontcolor-lightgray)]">100 xp</span>
           </div>
         </div>
       </div>

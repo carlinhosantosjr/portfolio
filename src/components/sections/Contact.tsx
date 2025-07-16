@@ -1,10 +1,10 @@
-import whatsAppIcon from '../../assets/whatsIcon.png'
-import linkedinIcon from '../../assets/linkedinIcon.png'
-import outlookIcon from '../../assets/outlookIcon.png'
+import whatsAppIcon from '../../assets/contact/whatsIcon.png'
+import linkedinIcon from '../../assets/contact/linkedinIcon.png'
+import outlookIcon from '../../assets/contact/outlookIcon.png'
 
 export function Contact() {
   return (
-    <div id="contactSession" className="flex flex-col w-[652px] bg-[var(--gray-400)] gap-3 mt-10">
+    <div id="contactSection" className="flex flex-col w-[652px] bg-[var(--gray-400)] gap-3 mt-10">
       <div className="bg-[var(--gray-600)] h-10 content-center">
         <h3 className="text-[var(--fontcolor-white)] text-[1rem] pl-2.5">Contato</h3>
       </div>

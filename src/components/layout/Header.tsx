@@ -1,6 +1,6 @@
 import avatar from '../../assets/avatar.png'
 import flag from '../../assets/flag.png'
-import react from '../../assets/react-icon.png'
+import react from '../../assets/stacks/iconReact.png'
 
 export function Header() {
   return (

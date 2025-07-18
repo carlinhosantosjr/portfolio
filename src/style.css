@@ -15,6 +15,7 @@
   --fontcolor-mediumgray: #969696;
 }
 
+
 @layer utilities {
   .swiper-marquee .swiper-wrapper {
     transition-timing-function: linear;

@@ -4,7 +4,7 @@ import 'swiper/swiper.min.css'
 
 interface Icon {
   title: string
-  src: string
+  iconSrc: string
 }
 
 interface SwiperIconsProps {
@@ -35,7 +35,7 @@ export function SwiperIcons({ icons, quantityDisplayIcon, iconHeight, iconWidth,
           <img
             className={`pl-1 pr-1 h-${iconHeight} w-${iconWidth} rounded-bl-lg transition-all duration-200 hover:cursor-pointer hover:shadow-sm hover:scale-[1.15]`}
             title={icon.title}
-            src={icon.src}
+            src={icon.iconSrc}
             alt={icon.title}
             onClick={() => {
               if (!scrollToSession) return

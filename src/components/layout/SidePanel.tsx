@@ -1,6 +1,6 @@
 import 'swiper/swiper.min.css'
 import { SwiperIcons } from '../ui/Swiper'
-import { achievements, contacts, projectsIcons, stackIcons } from '../../data/mockedData'
+import { achievements, contacts, projects, stackIcons } from '../../data/mockedData'
 
 export function SidePanel() {
   return (
@@ -12,12 +12,12 @@ export function SidePanel() {
 
       <div className="pt-5 pl-2">
         <span>Projetos</span>
-        <SwiperIcons icons={projectsIcons} quantityDisplayIcon={4} iconWidth="14" iconHeight="12" scrollToSession="projectSpotlightSection" />
+        <SwiperIcons icons={projects} quantityDisplayIcon={4} iconWidth="14" iconHeight="12" scrollToSession="projectSpotlightSection" />
       </div>
 
       <div className="pt-5 pl-2">
         <span>Conquistas</span>
-        <SwiperIcons icons={achievements} quantityDisplayIcon={4} iconWidth="12" iconHeight="10" scrollToSession="achievementsSection" />
+        <SwiperIcons icons={achievements} quantityDisplayIcon={5} scrollToSession="achievementsSection" />
       </div>
 
       <div className="mt-5 pl-2 ">
@@ -27,7 +27,7 @@ export function SidePanel() {
             <img
               className=" mt-2.5 h-10 mr-2 rounded-bl-lg transition-all duration-200 hover:cursor-pointer hover:shadow-sm hover:scale-[1.15]"
               title={contact.title}
-              src={contact.src}
+              src={contact.iconSrc}
               alt={contact.title}
               key={index}
               onClick={() => {

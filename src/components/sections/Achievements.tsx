@@ -25,7 +25,7 @@ export function Achievements({ openModal }:AchievementsProps) {
             <img
               className="pl-1 pr-1 h-20 w-22 rounded-bl-lg transition-all duration-200 hover:cursor-pointer hover:shadow-sm hover:scale-[1.15]"
               title={achievement.title}
-              src={achievement.iconSrc}
+              src={achievement.imageSrc}
               alt={achievement.title}
               key={index}
               onClick={() => handleOPenModal(achievement)}

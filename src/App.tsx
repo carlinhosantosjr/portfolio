@@ -45,7 +45,7 @@ export function App() {
 
       <button
         onClick={handleThemeToggle}
-        className="fixed top-4 right-4 flex pl-2 px-3 py-2 bg-[var(--gray-600)] text-white rounded-full shadow-md z-50 hover:bg-[var(--gray-400)]"
+        className="fixed top-4 right-4 flex pl-2 px-3 py-2 bg-[var(--gray-600)] text-white rounded-full shadow-md z-50 hover:bg-[var(--gray-400)] cursor-pointer"
       >
         {isDarkMode
           ? '🌞 Light'
@@ -66,7 +66,7 @@ export function App() {
         <div className="flex justify-between">
           <div className="pl-2.5">
             <About />
-            <ProjectSpotlight />
+            <ProjectSpotlight openModal={handleOpenModal} />
             <Achievements openModal={handleOpenModal} />
             <Contact />
           </div>

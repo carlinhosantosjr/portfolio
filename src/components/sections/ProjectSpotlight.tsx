@@ -1,7 +1,16 @@
+import type React from 'react'
 import { projects } from '../../data/mockedData'
 import { ProjectCard } from '../ui/ProjectCard'
+import { ProjectModalContent, type ProjectModalProps } from '../modals/ProjectModalContent'
 
-export function ProjectSpotlight() {
+interface ProjectSpotlightProps {
+  openModal: (content: React.ReactNode) => void
+}
+
+export function ProjectSpotlight({ openModal }: ProjectSpotlightProps) {
+  function handleOPenModal(project: ProjectModalProps) {
+    openModal(<ProjectModalContent {...project} />)
+  }
   return (
     <div id="projectSpotlightSection" className="flex flex-col w-[652px] bg-[var(--gray-400)] gap-3 mt-10 ">
       <div className="bg-[var(--gray-600)] h-10 content-center ">
@@ -15,6 +24,7 @@ export function ProjectSpotlight() {
             title={project.title}
             description={project.description}
             stacksProject={project.stacksProject}
+            onClick={() => handleOPenModal(project)}
           />
         ))}
 

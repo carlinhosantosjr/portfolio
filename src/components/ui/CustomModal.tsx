@@ -17,7 +17,7 @@ export function CustomModal({ isOpen, onClose, children }:CustomModalProps) {
       }`}
     >
       <div
-        className={`bg-gradient-to-tr from-blue-100 via-slate-100 via-50% to-orange-100 rounded-sm shadow-lg p-6 inline-block relative transform transition-transform duration-500 ease-in-out ${
+        className={`bg-gradient-to-tr from-blue-500 via-slate-100 via-50% to-orange-100 rounded-sm shadow-lg p-6 inline-block relative transform transition-transform duration-500 ease-in-out ${
           isOpen
 ? 'scale-100 opacity-100'
 : 'scale-95 opacity-0'

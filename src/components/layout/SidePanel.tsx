@@ -1,5 +1,5 @@
 import 'swiper/swiper.min.css'
-import { SwiperIcons } from '../ui/Swiper'
+import { SwiperContent } from '../ui/Swiper'
 import { achievements, contacts, projects, stackIcons } from '../../data/mockedData'
 
 export function SidePanel() {
@@ -7,17 +7,17 @@ export function SidePanel() {
     <div className="bg-[var(--gray-500)] w-[268px] h-[428px] text-sm text-[var(--fontcolor-white)] p-2 pt-2.5 mr-5">
       <div className="p-2">
         <span>Stacks e habilidades</span>
-        <SwiperIcons icons={stackIcons} quantityDisplayIcon={5} />
+        <SwiperContent contents={stackIcons} quantityDisplayContent={5} />
       </div>
 
       <div className="pt-5 pl-2">
         <span>Projetos</span>
-        <SwiperIcons icons={projects} quantityDisplayIcon={4} iconWidth="14" iconHeight="12" scrollToSession="projectSpotlightSection" />
+        <SwiperContent contents={projects} quantityDisplayContent={4} contentWidth="14" contentHeight="12" scrollToSession="projectSpotlightSection" />
       </div>
 
       <div className="pt-5 pl-2">
         <span>Conquistas</span>
-        <SwiperIcons icons={achievements} quantityDisplayIcon={5} scrollToSession="achievementsSection" />
+        <SwiperContent contents={achievements} quantityDisplayContent={5} scrollToSession="achievementsSection" />
       </div>
 
       <div className="mt-5 pl-2 ">

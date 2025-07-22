@@ -1,42 +1,52 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay } from 'swiper'
-import 'swiper/swiper.min.css'
+import { Autoplay, Navigation, EffectFade } from 'swiper'
 
-interface Icon {
+interface Content {
   title: string
-  iconSrc: string
+  imageSrc: string
 }
 
-interface SwiperIconsProps {
-  icons: Icon[]
-  quantityDisplayIcon: number
-  iconHeight?: string
-  iconWidth?: string
+interface SwiperContentProps {
+  contents: Content[]
+  quantityDisplayContent: number
+  contentHeight?: string
+  contentWidth?: string
   scrollToSession?: string
+  projectContent?: boolean
 }
 
-export function SwiperIcons({ icons, quantityDisplayIcon, iconHeight, iconWidth, scrollToSession }: SwiperIconsProps) {
+export function SwiperContent({
+  contents, quantityDisplayContent,
+  contentHeight, contentWidth, scrollToSession, projectContent,
+}: SwiperContentProps) {
   return (
     <Swiper
-      modules={[Autoplay]}
+      modules={!projectContent
+        ? [Autoplay]
+        : [Navigation, EffectFade, Autoplay]}
       className="swiper-marquee select-none "
+      effect="fade"
+      fadeEffect={{ crossFade: true }}
       loop
       freeMode
       autoplay={{
         delay: 0,
         disableOnInteraction: false,
-        pauseOnMouseEnter: true,
+        pauseOnMouseEnter: !projectContent,
       }}
-      slidesPerView={quantityDisplayIcon}
-      speed={2000}
+      slidesPerView={quantityDisplayContent}
+      speed={2500}
+      {...(projectContent
+        ? { navigation: true }
+        : {})}
     >
-      {icons.map((icon, index) => (
+      {contents.map((content, index) => (
         <SwiperSlide key={index} className="pt-2.5">
           <img
-            className={`pl-1 pr-1 h-${iconHeight} w-${iconWidth} rounded-bl-lg transition-all duration-200 hover:cursor-pointer hover:shadow-sm hover:scale-[1.15]`}
-            title={icon.title}
-            src={icon.iconSrc}
-            alt={icon.title}
+            className={`pl-1 pr-1 h-${contentHeight} w-${contentWidth} rounded-bl-lg transition-all duration-200 hover:cursor-pointer hover:shadow-sm ${!projectContent && 'hover:scale-[1.12]'}`}
+            title={content.title}
+            src={content.imageSrc}
+            alt={content.title}
             onClick={() => {
               if (!scrollToSession) return
 

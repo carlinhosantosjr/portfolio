@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@import "swiper/css/navigation";
+@import 'swiper/css/zoom';
+@import 'swiper/css';
+@import 'swiper/css/effect-fade';
+
 
 @theme {
   --font-sans: "Noto Sans", sans-serif;
@@ -7,9 +12,7 @@
   --gray-600: #070707;
   --gray-500: #0d0d0d;
   --gray-400: #111111;
-  --gray-300: #181818;
-
-  
+  --gray-300: #181818;  
   --fontcolor-white: #fafafa;
   --fontcolor-lightgray: #c4c4c4;
   --fontcolor-mediumgray: #969696;
@@ -20,4 +23,18 @@
   .swiper-marquee .swiper-wrapper {
     transition-timing-function: linear;
   }
+}
+
+/* Swiper styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--gray-600);            
+  display: flex;
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    transform: scale(1.2);
 }

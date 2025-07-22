@@ -1,15 +1,15 @@
 export interface AchievementModalContentProps {
   title: string
-  iconSrc: string
+  imageSrc: string
   description: string
   certificateLink: string
 }
 
-export function AchievementModalContent({ title, description, iconSrc, certificateLink }: AchievementModalContentProps) {
+export function AchievementModalContent({ title, description, imageSrc, certificateLink }: AchievementModalContentProps) {
   return (
     <div className="flex flex-col gap-4 p-4 max-w-lg">
       <div className="flex items-center ">
-        <img src={iconSrc} alt={title} className="w-16 h-16 mr-3 rounded-bl-xl" />
+        <img src={imageSrc} alt={title} className="w-16 h-16 mr-3 rounded-bl-xl" />
         <h2 className="flex text-xl font-bold">{title}</h2>
       </div>
 

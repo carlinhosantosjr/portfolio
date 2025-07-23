@@ -23,8 +23,11 @@ import githubBlogIcon from '../assets/projects/githubBlog/githubBlogIcon.png'
 import githubBlogPreview from '../assets/projects/githubBlog/githubBlogPreview.png'
 import githubImage1 from '../assets/projects/githubBlog/image1.png'
 import githubImage2 from '../assets/projects/githubBlog/image2.png'
-import quickStoreIcon from '../assets/projects/quickStore/quickStoreIcon.png'
+import quickStoreIcon from '../assets/projects/quickStore/quickStoreIcon1.png'
 import quickStorePreview from '../assets/projects/quickStore/quickStorePreview.png'
+import quickStoreImage1 from '../assets/projects/quickStore/image1.png'
+import quickStoreImage2 from '../assets/projects/quickStore/image2.png'
+import quickStoreImage3 from '../assets/projects/quickStore/image3.png'
 
 // contacts import
 import whatsIcon from '../assets/contact/whatsIcon.png'
@@ -66,7 +69,8 @@ export const projects = [
   {
     imagePreviewSrc: coffeePreview,
     title: 'The Coffee List',
-    description: 'The Coffee List é um projeto desenvolvido como desafio do segundo modulo de React da Rocketseat. A intenção principal do desenvolvimento é reforçar o conhecimento aprendido no curso até o momento.',
+    shortDescription: 'The Coffee List é um projeto desenvolvido como desafio do segundo modulo de React da Rocketseat. A intenção principal do desenvolvimento é reforçar o conhecimento aprendido no curso até o momento.',
+    fullDescription: 'The Coffee List é um projeto desenvolvido como desafio do segundo modulo de React da Rocketseat. A intenção principal do desenvolvimento é reforçar o conhecimento aprendido no curso até o momento.',
     imageSrc: coffeeIcon,
     deployLink: 'https://github-blog-virid-zeta.vercel.app',
     repositoryLink: 'https://github.com/carlinhosantosjr/github-blog',
@@ -84,11 +88,16 @@ export const projects = [
   {
     imagePreviewSrc: quickStorePreview,
     title: 'Quick Store',
-    description: 'Quick Store é um projeto na qual é integrado com api\'s da plataforma de pagamentos stripe para que possamos realizar busca dos produtos e finalizar compras.',
+    shortDescription: 'Quick Store é um projeto na qual é integrado com api\'s da plataforma de pagamentos stripe para que possamos realizar busca dos produtos e finalizar compras.',
+    fullDescription: 'Este projeto foi desenvolvido como desafio no curso de ReactJs da Rocketseat e consiste em um e-commerce integrado com a API da Stripe; sua arquitetura explora fortemente os recursos de server-side rendering oferecidos pelo Next.js, garantindo alta performance; foram utilizadas tecnologias modernas como Next.js, TypeScript, Stitches para estilização, Axios para comunicação com APIs, e Context API para gerenciamento de estado, compondo uma solução robusta e funcional voltada para o aprendizado prático de desenvolvimento web.',
     imageSrc: quickStoreIcon,
-    deployLink: 'https://github-blog-virid-zeta.vercel.app',
-    repositoryLink: 'https://github.com/carlinhosantosjr/github-blog',
-    imagesProject: [],
+    deployLink: '',
+    repositoryLink: 'https://github.com/carlinhosantosjr/quick-store',
+    imagesProject: [
+      { imageSrc: quickStoreImage1, title: 'Imagem 1' },
+      { imageSrc: quickStoreImage2, title: 'Imagem 2' },
+      { imageSrc: quickStoreImage3, title: 'Imagem 3' },
+    ],
     stacksProject: [
       { title: 'Nextjs', src: iconNext },
       { title: 'Typescript', src: iconTypescript },
@@ -97,7 +106,8 @@ export const projects = [
   {
     imagePreviewSrc: portfolioPreview,
     title: 'Portfolio Pessoal',
-    description: 'Meu portfólio foi criado para apresentar meus principais projetos e certificados adquiridos ao longo da minha trajetória. Com visual inspirado na Steam, combina tecnologia e personalidade para entregar uma experiência imersiva e organizada.',
+    shortDescription: 'Meu portfólio foi criado para apresentar meus principais projetos e certificados adquiridos ao longo da minha trajetória. Com visual inspirado na Steam, combina tecnologia e personalidade para entregar uma experiência imersiva e organizada.',
+    fullDescription: 'The Coffee List é um projeto desenvolvido como desafio do segundo modulo de React da Rocketseat. A intenção principal do desenvolvimento é reforçar o conhecimento aprendido no curso até o momento.',
     imageSrc: portfolioIcon,
     deployLink: 'https://github-blog-virid-zeta.vercel.app',
     repositoryLink: 'https://github.com/carlinhosantosjr/github-blog',
@@ -115,7 +125,8 @@ export const projects = [
   {
     imagePreviewSrc: githubBlogPreview,
     title: 'Github Blog',
-    description: 'Github Blog foi desenvolvido como desafio para o curso de React da Rocketseat. Na qual utilizamos de api do github para simularmos um blog.',
+    shortDescription: 'Github Blog foi desenvolvido como desafio para o curso de React da Rocketseat. Na qual utilizamos de api do github para simularmos um blog.',
+    fullDescription: 'Este projeto foi desenvolvido como parte de um desafio do curso de ReactJs da Rocketseat. A proposta é construir uma aplicação que simula um blog consumindo dados da API do GitHub, onde cada post corresponde a uma issue de um repositório. Utilizando React com TypeScript, o projeto traz uma estrutura moderna e funcional. A estilização é feita com Styled Components, a navegação com React Router, e a comunicação com a API é gerenciada via Axios. O gerenciamento global de estado é feito através da Context API, proporcionando uma experiência fluida e integrada.',
     imageSrc: githubBlogIcon,
     deployLink: 'https://github-blog-virid-zeta.vercel.app',
     repositoryLink: 'https://github.com/carlinhosantosjr/github-blog',

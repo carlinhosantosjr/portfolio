@@ -43,7 +43,9 @@ export function SwiperContent({
       {contents.map((content, index) => (
         <SwiperSlide key={index} className="pt-2.5">
           <img
-            className={`pl-1 pr-1 h-${contentHeight} w-${contentWidth} rounded-bl-lg transition-all duration-200 hover:cursor-pointer hover:shadow-sm ${!projectContent && 'hover:scale-[1.12]'}`}
+            className={`pl-1 pr-1 h-${contentHeight} w-${contentWidth} rounded-bl-lg transition-all duration-200 hover:shadow-sm ${!projectContent && 'hover:scale-[1.12]'} ${projectContent
+? 'hover:cursor-default'
+: 'hover:cursor-pointer'}`}
             title={content.title}
             src={content.imageSrc}
             alt={content.title}

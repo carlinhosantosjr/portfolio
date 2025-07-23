@@ -21,7 +21,7 @@ export function App() {
 
   function getInitialDarkMode() {
     const hour = new Date().getHours()
-    return hour >= 18 || hour < 6
+    return hour >= 19 || hour < 6
   }
 
   function handleOpenModal(content: React.ReactNode) {

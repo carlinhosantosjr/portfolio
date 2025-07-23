@@ -22,7 +22,7 @@ export function ProjectSpotlight({ openModal }: ProjectSpotlightProps) {
             key={index}
             imagePreviewSrc={project.imagePreviewSrc}
             title={project.title}
-            description={project.description}
+            shortDescription={project.shortDescription}
             stacksProject={project.stacksProject}
             onClick={() => handleOPenModal(project)}
           />

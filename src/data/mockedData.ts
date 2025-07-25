@@ -13,7 +13,6 @@ import coffeePreview from '../assets/projects/theCoffeeList/theCoffeeListPreview
 import theCoffeeListImage1 from '../assets/projects/theCoffeeList/image1.png'
 import theCoffeeListImage2 from '../assets/projects/theCoffeeList/image2.png'
 import theCoffeeListImage3 from '../assets/projects/theCoffeeList/image3.png'
-import theCoffeeListImage4 from '../assets/projects/theCoffeeList/image4.png'
 import portfolioIcon from '../assets/projects/portfolio/portfolioIcon.png'
 import portfolioPreview from '../assets/projects/portfolio/portfolioPreview.png'
 import portfolioImage1 from '../assets/projects/portfolio/image1.png'
@@ -23,7 +22,7 @@ import githubBlogIcon from '../assets/projects/githubBlog/githubBlogIcon.png'
 import githubBlogPreview from '../assets/projects/githubBlog/githubBlogPreview.png'
 import githubImage1 from '../assets/projects/githubBlog/image1.png'
 import githubImage2 from '../assets/projects/githubBlog/image2.png'
-import quickStoreIcon from '../assets/projects/quickStore/quickStoreIcon1.png'
+import quickStoreIcon from '../assets/projects/quickStore/quickStoreIcon.png'
 import quickStorePreview from '../assets/projects/quickStore/quickStorePreview.png'
 import quickStoreImage1 from '../assets/projects/quickStore/image1.png'
 import quickStoreImage2 from '../assets/projects/quickStore/image2.png'
@@ -70,7 +69,7 @@ export const projects = [
     imagePreviewSrc: coffeePreview,
     title: 'The Coffee List',
     shortDescription: 'The Coffee List é um projeto desenvolvido como desafio do segundo modulo de React da Rocketseat. A intenção principal do desenvolvimento é reforçar o conhecimento aprendido no curso até o momento.',
-    fullDescription: 'The Coffee List é um projeto desenvolvido como desafio do segundo modulo de React da Rocketseat. A intenção principal do desenvolvimento é reforçar o conhecimento aprendido no curso até o momento.',
+    fullDescription: 'The Coffee List é um projeto desenvolvido como desafio do segundo módulo do curso de React da Rocketseat.No projeto utilizei de conhecimentos referentes a uso de estados, ContextAPI, LocalStorage, imutabilidade, listas com chaves, propriedades e componentização. As funcionalidades implementadas incluem a listagem de cafés disponíveis para compra, adição e remoção de itens no carrinho com controle de quantidade, formulário de endereço para entrega, exibição dinâmica da quantidade total de itens no carrinho e cálculo do valor total com base nos produtos selecionados.',
     imageSrc: coffeeIcon,
     deployLink: 'https://github-blog-virid-zeta.vercel.app',
     repositoryLink: 'https://github.com/carlinhosantosjr/github-blog',
@@ -78,7 +77,6 @@ export const projects = [
       { imageSrc: theCoffeeListImage1, title: 'Imagem 1' },
       { imageSrc: theCoffeeListImage2, title: 'Imagem 2' },
       { imageSrc: theCoffeeListImage3, title: 'Imagem 3' },
-      { imageSrc: theCoffeeListImage4, title: 'Imagem 4' },
     ],
     stacksProject: [
       { title: 'React', src: iconReact },

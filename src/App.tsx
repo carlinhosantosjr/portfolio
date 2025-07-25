@@ -7,6 +7,7 @@ import { Contact } from './components/sections/Contact'
 import { Achievements } from './components/sections/Achievements'
 import { BackgroundSwitcher } from './components/layout/BackgroundSwitcher'
 import { CustomModal } from './components/ui/CustomModal'
+import { BadgeLevel } from './components/ui/BadgeLevel'
 
 export function App() {
   const [visible, setVisible] = useState(false)
@@ -45,11 +46,11 @@ export function App() {
 
       <button
         onClick={handleThemeToggle}
-        className="fixed top-4 right-4 flex pl-2 px-3 py-2 bg-[var(--gray-600)] text-white rounded-full shadow-md z-50 hover:bg-[var(--gray-400)] cursor-pointer"
+        className="hidden fixed top-4 right-4 flex p-2 bg-[var(--gray-600)] text-white rounded-full shadow-md z-50 hover:bg-[var(--gray-400)] cursor-pointer screen1100:inline"
       >
         {isDarkMode
-          ? '🌞 Light'
-          : '🌙 Dark'}
+          ? <div className="flex gap-1">🌞<span className="hidden screen1190:inline">Light</span></div>
+          : <div className="flex gap-1">🌙<span className="hidden screen1190:inline">Dark</span></div>}
       </button>
       <BackgroundSwitcher isDarkMode={isDarkMode} />
 
@@ -63,14 +64,17 @@ export function App() {
       >
 
         <Header />
-        <div className="flex justify-between">
-          <div className="pl-2.5">
+        <div className="flex flex-col-reverse w-12/12 items-center-safe screen930:items-start screen930:flex-row justify-between">
+          <div className="screen930:pl-2.5">
             <About />
             <ProjectSpotlight openModal={handleOpenModal} />
             <Achievements openModal={handleOpenModal} />
             <Contact />
           </div>
           <SidePanel />
+          <div className="screen820:hidden w-full flex justify-center">
+            <BadgeLevel isMobile />
+          </div>
         </div>
       </div>
     </div>

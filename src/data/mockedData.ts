@@ -105,7 +105,7 @@ export const projects = [
     imagePreviewSrc: portfolioPreview,
     title: 'Portfolio Pessoal',
     shortDescription: 'Meu portfólio foi criado para apresentar meus principais projetos e certificados adquiridos ao longo da minha trajetória. Com visual inspirado na Steam, combina tecnologia e personalidade para entregar uma experiência imersiva e organizada.',
-    fullDescription: 'The Coffee List é um projeto desenvolvido como desafio do segundo modulo de React da Rocketseat. A intenção principal do desenvolvimento é reforçar o conhecimento aprendido no curso até o momento.',
+    fullDescription: 'Este portfólio foi desenvolvido com o objetivo de apresentar alguns dos projetos que venho criando ao longo da minha trajetória como desenvolvedor. Inspirado na interface da Steam, ele combina uma estética moderna e intuitiva com foco na usabilidade. Utilizei Tailwindcss e TypeScript para garantir um visual limpo, responsivo e funcional, destacando minhas habilidades com tecnologias atuais e boas práticas de front-end.',
     imageSrc: portfolioIcon,
     deployLink: 'https://github-blog-virid-zeta.vercel.app',
     repositoryLink: 'https://github.com/carlinhosantosjr/github-blog',

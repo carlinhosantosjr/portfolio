@@ -64,11 +64,11 @@ export function App() {
       >
 
         <Header />
-        <div className="flex flex-col-reverse w-12/12 items-center-safe screen930:items-start screen930:flex-row justify-between">
-          <div className="screen930:pl-2.5">
+        <div className="flex flex-col-reverse w-full items-center-safe screen930:items-start screen930:flex-row justify-between">
+          <div className="screen930:pl-2.5 max-w-full w-full flex flex-col items-center px-1">
             <About />
-            <ProjectSpotlight openModal={handleOpenModal} />
             <Achievements openModal={handleOpenModal} />
+            <ProjectSpotlight openModal={handleOpenModal} />
             <Contact />
           </div>
           <SidePanel />

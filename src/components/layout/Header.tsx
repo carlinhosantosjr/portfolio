@@ -10,7 +10,6 @@ export function Header() {
         alt="profile"
         className="min-w-[120px] screen420:max-w-40 border-1 border-[var(--background-darker)] rounded-sm"
       />
-
       <div className="screen420:pl-9 pl-4 pr-4">
         <div className="flex">
           <h2 className="text-[var(--fontcolor-white)] text-2xl pb-1">
@@ -24,9 +23,9 @@ export function Header() {
             <img
               src={flag}
               alt="brasil"
-              className="max-w-4 max-h-3 self-center"
+              className="max-w-4 max-h-3 self-center mr-1"
             />
-            <span className=" ">Batatais, São Paulo, Brasil</span>
+            <span>Batatais, São Paulo, Brasil</span>
           </div>
         </div>
       </div>

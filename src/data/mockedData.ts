@@ -71,8 +71,8 @@ export const projects = [
     shortDescription: 'The Coffee List é um projeto desenvolvido como desafio do segundo modulo de React da Rocketseat. A intenção principal do desenvolvimento é reforçar o conhecimento aprendido no curso até o momento.',
     fullDescription: 'The Coffee List é um projeto desenvolvido como desafio do segundo módulo do curso de React da Rocketseat.No projeto utilizei de conhecimentos referentes a uso de estados, ContextAPI, LocalStorage, imutabilidade, listas com chaves, propriedades e componentização. As funcionalidades implementadas incluem a listagem de cafés disponíveis para compra, adição e remoção de itens no carrinho com controle de quantidade, formulário de endereço para entrega, exibição dinâmica da quantidade total de itens no carrinho e cálculo do valor total com base nos produtos selecionados.',
     imageSrc: coffeeIcon,
-    deployLink: 'https://github-blog-virid-zeta.vercel.app',
-    repositoryLink: 'https://github.com/carlinhosantosjr/github-blog',
+    deployLink: '',
+    repositoryLink: 'https://github.com/carlinhosantosjr/the-coffee-list',
     imagesProject: [
       { imageSrc: theCoffeeListImage1, title: 'Imagem 1' },
       { imageSrc: theCoffeeListImage2, title: 'Imagem 2' },
@@ -107,8 +107,8 @@ export const projects = [
     shortDescription: 'Meu portfólio foi criado para apresentar meus principais projetos e certificados adquiridos ao longo da minha trajetória. Com visual inspirado na Steam, combina tecnologia e personalidade para entregar uma experiência imersiva e organizada.',
     fullDescription: 'Este portfólio foi desenvolvido com o objetivo de apresentar alguns dos projetos que venho criando ao longo da minha trajetória como desenvolvedor. Inspirado na interface da Steam, ele combina uma estética moderna e intuitiva com foco na usabilidade. Utilizei Tailwindcss e TypeScript para garantir um visual limpo, responsivo e funcional, destacando minhas habilidades com tecnologias atuais e boas práticas de front-end.',
     imageSrc: portfolioIcon,
-    deployLink: 'https://github-blog-virid-zeta.vercel.app',
-    repositoryLink: 'https://github.com/carlinhosantosjr/github-blog',
+    deployLink: 'https://carlinhosantosjr.com.br',
+    repositoryLink: 'https://github.com/carlinhosantosjr/portfolio',
     imagesProject: [
       { imageSrc: portfolioImage1, title: 'Imagem 1' },
       { imageSrc: portfolioImage2, title: 'Imagem 2' },

@@ -17,7 +17,7 @@ export function CustomModal({ isOpen, onClose, children }:CustomModalProps) {
       }`}
     >
       <div
-        className={`bg-gradient-to-tr from-blue-500 via-slate-100 via-50% to-orange-100 rounded-sm shadow-lg p-6 inline-block relative transform transition-transform duration-500 ease-in-out ${
+        className={`bg-gradient-to-tr from-[var(--gray-300)] via-[var(--fontcolor-mediumgray)] via-20% to-[var(--gray-300)] rounded-sm shadow-lg p-6 inline-block relative transform transition-transform duration-500 ease-in-out ${
           isOpen
 ? 'opacity-100'
 : 'opacity-0'
@@ -26,7 +26,7 @@ export function CustomModal({ isOpen, onClose, children }:CustomModalProps) {
       >
         <button
           onClick={onClose}
-          className="absolute p-3 text-xl top-0 right-0 text-gray-500 hover:text-gray-700 cursor-pointer"
+          className="absolute p-3 text-xl top-0 right-0 text-gray-300 hover:text-gray-400 cursor-pointer"
         >
           ✖
         </button>

@@ -24,10 +24,10 @@ export function ProjectModalContent({ imagesProject, title, fullDescription, sta
   const isValidDeployLink = deployLink && deployLink.trim() !== ''
 
   return (
-    <div className="flex flex-col gap-4 screen930:max-w-4xl max-w-full w-full center">
+    <div className="flex flex-col gap-4 screen930:max-w-4xl max-w-full w-full center text-[var(--fontcolor-white)]">
       <div className="flex items-center justify-center gap-2 w-full">
         <img className="screen550:w-16 w-12 rounded-bl-2xl rounded" src={imageSrc} alt="icon" />
-        <h2 className="screen550:text-2xl text-xl font-bold">{title}</h2>
+        <h2 className=" screen550:text-2xl text-xl font-bold">{title}</h2>
       </div>
 
       <div className="grid grid-cols-1 screen930:grid-cols-[1fr_auto] gap-3 p-1 items-center screen930:w-full items-center">
@@ -59,7 +59,7 @@ export function ProjectModalContent({ imagesProject, title, fullDescription, sta
           </a>
         )}
         <a
-          className="px-5 py-2 mt-4 bg-[var(--gray-600)] text-[var(--fontcolor-white)] rounded-lg shadow-md hover:bg-[var(--gray-300)] transition-colors duration-100 cursor-pointer w-1/2 text-center w-[150px]"
+          className="px-5 py-2 mt-4 bg-[var(--gray-600)] rounded-lg shadow-md hover:bg-[var(--gray-300)] transition-colors duration-100 cursor-pointer w-1/2 text-center w-[150px]"
           href={repositoryLink} target="_blank" rel="noopener noreferrer"
         >
           Ver código

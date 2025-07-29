@@ -10,7 +10,7 @@ export function About() {
         </p>
         <p className="break-words whitespace-pre-wrap">
           Atuei por 8 anos como auxiliar em um escritório de advocacia, experiência que reforçou minha organização, responsabilidade e pontualidade. Também trabalhei como estagiário em Desenvolvimento Front-end, utilizando React.js com ferramentas como Git e Jira em projetos colaborativos.
-          Nos últimos 4 anos, fui jogador profissional de poker, o que fortaleceu minha análise estratégica, resiliência e tomada de decisões sob pressão.
+          Nos últimos 5 anos, fui jogador profissional de poker, o que fortaleceu minha análise estratégica, resiliência e tomada de decisões sob pressão.
         </p>
         <p className="break-words whitespace-pre-wrap">
           Busco minha primeira oportunidade como desenvolvedor júnior, com o objetivo de contribuir com criatividade, comprometimento e foco na resolução de problemas.
